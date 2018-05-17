@@ -81,11 +81,11 @@ data = [
 layout = go.Layout(
     title='London Crime Hotspots in 2016 (BigQuery free dataset)',
     xaxis= dict(
-            title="Borough",
+            title="Month",
             automargin=True
     ),
     yaxis= dict(
-            title="Month",
+            title="Borough",
             automargin=True
     )
 
