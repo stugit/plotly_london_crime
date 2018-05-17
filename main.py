@@ -36,7 +36,7 @@ query = (
 # client = bigquery.Client.from_service_account_json(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 
 # df = gbq.read_gbq(query, project_id="gcp-application-development", dialect="standard", private_key=os.environ['GOOGLE_APPLICATION_CREDENTIALS'] )
-df = gbq.read_gbq(query, project_id="gcp-application-development", dialect="standard")
+df = gbq.read_gbq(query, project_id="plotly-london-crime", dialect="standard")
 boroughs = df.borough.unique()
 months = sorted(df.month.unique())
 #print("boroughs: {0}".format(boroughs))
